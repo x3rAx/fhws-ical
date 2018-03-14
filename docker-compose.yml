@@ -17,9 +17,11 @@ services:
         image: php:7-fpm
         volumes:
             - './src:/app/src'
+            - './php-log.conf:/usr/local/etc/php-fpm.d/zz-log.conf'
         networks:
             - fhws-ical-network
 
 networks:
     fhws-ical-network:
         driver: bridge
+
