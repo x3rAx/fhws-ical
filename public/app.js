@@ -20,7 +20,9 @@ new Vue({
                 // Get filename
                 var filename = this.target.split('/').splice(-1)[0];
 
-                this.url = 'http://fhws-ical.x3ro.net/' + filename;
+                this.url = location.protocol + '//'
+                    + location.host + '/'
+                    + filename;
             }
         }
     }
