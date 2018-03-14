@@ -11,4 +11,4 @@ web:
 php:
     image: php:7-fpm
     volumes:
-        - './public:/app/public'
+        - './src:/app/src'
