@@ -64,7 +64,7 @@ if ($request !== '/') {
               </div>
               <div class="form-group">
                 <label for="form-url">iCal URL with fixed encoding</label>
-                <input type="text" :value="url" id="form-url" class="form-control" disabled />
+                <input type="text" :value="url" id="form-url" class="form-control" readonly />
                 <small class="form-text text-muted"><a :href="url">Open</a></small>
               </div>
             </form>
