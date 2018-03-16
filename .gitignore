@@ -1,2 +1,6 @@
+# Local environment
+/.env
+
 # Logs
 /logs
+
