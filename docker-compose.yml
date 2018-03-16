@@ -5,6 +5,7 @@ version: '3'
 services:
     web:
         image: nginx:latest
+        restart: ${RESTART}
         ports:
             - '${WEB_IP}:${WEB_PORT}:80'
         volumes:
@@ -15,6 +16,7 @@ services:
 
     php:
         image: php:7-fpm
+        restart: ${RESTART}
         volumes:
             - './src:/app/src'
             - './php-log.conf:/usr/local/etc/php-fpm.d/zz-log.conf'
